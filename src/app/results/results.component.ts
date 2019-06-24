@@ -16,6 +16,7 @@ export class ResultsComponent implements OnInit {
   custs
   phone
   custm
+  Rum
     constructor(private router: Router,private route: ActivatedRoute) { }
   
     ngOnInit() {
@@ -36,7 +37,9 @@ export class ResultsComponent implements OnInit {
       this.phone = params.custnumber
       console.log(this.phone)
       this.custm = params.custemail
-      console.log(this.phone)
+      console.log(this.custm)
+      this.Rum = params.Room
+      console.log(this.Rum)
     })
     }
     onComp(){

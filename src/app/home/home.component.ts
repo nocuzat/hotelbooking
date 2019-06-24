@@ -18,14 +18,15 @@ export class HomeComponent implements OnInit {
   custname
   custsurname
   custnumber
-  custemail;
+  custemail
+  Room;
     constructor(private router: Router) { }
   
     ngOnInit() {
     }
     onLogin(){
         this.router.navigate(['/results'], { queryParams: { datein: this.datein, dateout: this.dateout,adult:this.adult, kids:this.kids,
-                                                            custname:this.custname, custsurname:this.custsurname,custnumber:this.custnumber,custemail:this.custemail } });
+                                                            custname:this.custname, custsurname:this.custsurname,custnumber:this.custnumber,custemail:this.custemail,Room:this.Room } });
   
     }
     onSend(){
